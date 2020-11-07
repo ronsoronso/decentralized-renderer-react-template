@@ -1,27 +1,30 @@
 import { v2 } from "@govtechsg/decentralized-renderer-react-components";
 
-export interface CustomTemplateCertificate extends v2.OpenAttestationDocument {
+export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
   name: string;
-  institute: string;
-  foo?: {
-    title: string;
+  recipient: {
+    name: string;
   };
 }
 
-export const customTemplateCertificate: CustomTemplateCertificate = {
-  name: "John Doe",
-  institute: "Institute of John Doe",
+export const cocTemplateCertificate: CocTemplateCertificate = {
+  name: "Colli Certificate of Health",
   issuers: [
     {
-      name: "institute of blockchain"
+      name: "Colli",
+      documentStore: "0xf616006f3313aE88125f67919034A2743cAF7dAE",
+      identityProof: {
+        location: "issuer.loyalty.com.hk",
+        type: v2.IdentityProofType.DNSTxt
+      }
     }
   ],
+  recipient: {
+    name: "Artus Fung"
+  },
   $template: {
-    name: "custom",
+    name: "COC",
     type: v2.TemplateType.EmbeddedRenderer,
     url: "http://localhost:3000"
-  },
-  foo: {
-    title: "Bar is awesome"
   }
 };
