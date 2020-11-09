@@ -8,7 +8,7 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
 }
 
 export const cocTemplateCertificate: CocTemplateCertificate = {
-  name: "Colli Certificate of Health",
+  name: "Colli HealthCert",
   issuers: [
     {
       name: "Colli",
