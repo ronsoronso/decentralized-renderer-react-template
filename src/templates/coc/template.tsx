@@ -16,7 +16,7 @@ export const CocTemplate: FunctionComponent<
   TemplateProps<CocTemplateCertificate> & { className?: string }
 > = ({ document, className = "" }) => {
   return (
-    <div css={containerStyle} className={className} id="COC">
+    <div css={containerStyle} className={className} id="custom-template">
       <h1>{document.name}</h1>
       <div>awarded to</div>
       <h2>{document.recipient.name}</h2>

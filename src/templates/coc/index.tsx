@@ -2,8 +2,8 @@ import { CocTemplate } from "./template";
 
 export const templates = [
   {
-    id: "COC",
-    label: "COC",
+    id: "certificate",
+    label: "Certificate",
     template: CocTemplate
   }
 ];

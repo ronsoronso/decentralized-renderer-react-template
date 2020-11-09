@@ -23,7 +23,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
     name: "Artus"
   },
   $template: {
-    name: "COC",
+    name: "CocTemplate",
     type: v2.TemplateType.EmbeddedRenderer,
     url: "https://thirsty-jackson-6c6dad.netlify.app"
   }
