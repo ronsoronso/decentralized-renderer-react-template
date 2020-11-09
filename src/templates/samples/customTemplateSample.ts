@@ -8,7 +8,7 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
 }
 
 export const cocTemplateCertificate: CocTemplateCertificate = {
-  name: "OpenAttestation Tutorial Certificate of Completion",
+  name: "Certificate of Completion",
   issuers: [
     {
       name: "Collinson",
@@ -20,11 +20,11 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
     }
   ],
   recipient: {
-    name: "John Doe"
+    name: "Artus"
   },
   $template: {
     name: "COC",
     type: v2.TemplateType.EmbeddedRenderer,
-    url: "http://localhost:3000"
+    url: "https://thirsty-jackson-6c6dad.netlify.app"
   }
 };
