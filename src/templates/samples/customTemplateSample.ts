@@ -8,10 +8,10 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
 }
 
 export const cocTemplateCertificate: CocTemplateCertificate = {
-  name: "Collinson HealthCert",
+  name: "OpenAttestation Tutorial Certificate of Completion",
   issuers: [
     {
-      name: "Issuer Colli",
+      name: "Collinson",
       documentStore: "0xf616006f3313aE88125f67919034A2743cAF7dAE",
       identityProof: {
         location: "issuer.loyalty.com.hk",
@@ -20,10 +20,10 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
     }
   ],
   recipient: {
-    name: "Artus Fung"
+    name: "John Doe"
   },
   $template: {
-    name: "main",
+    name: "COC",
     type: v2.TemplateType.EmbeddedRenderer,
     url: "http://localhost:3000"
   }
