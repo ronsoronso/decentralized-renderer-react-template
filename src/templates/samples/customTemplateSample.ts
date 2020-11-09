@@ -11,7 +11,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   name: "Colli HealthCert",
   issuers: [
     {
-      name: "Colli",
+      name: "Issuer Colli",
       documentStore: "0xf616006f3313aE88125f67919034A2743cAF7dAE",
       identityProof: {
         location: "issuer.loyalty.com.hk",
@@ -23,8 +23,8 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
     name: "Artus Fung"
   },
   $template: {
-    name: "COC",
+    name: "main",
     type: v2.TemplateType.EmbeddedRenderer,
-    url: "http://localhost:3000"
+    url: "https://thirsty-jackson-6c6dad.netlify.app"
   }
 };
