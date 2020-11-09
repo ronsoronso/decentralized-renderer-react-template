@@ -8,7 +8,7 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
 }
 
 export const cocTemplateCertificate: CocTemplateCertificate = {
-  name: "Colli HealthCert",
+  name: "Collinson HealthCert",
   issuers: [
     {
       name: "Issuer Colli",
@@ -25,6 +25,6 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   $template: {
     name: "main",
     type: v2.TemplateType.EmbeddedRenderer,
-    url: "https://thirsty-jackson-6c6dad.netlify.app"
+    url: "http://localhost:3000"
   }
 };
