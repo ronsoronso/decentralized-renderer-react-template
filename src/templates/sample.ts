@@ -8,6 +8,13 @@ export interface CustomTemplateCertificate extends Document {
   };
   recipient?: {
     name: string;
+    result: string;
+    bookingreference: string;
+    testkitid: string;
+    psssportnumber: string;
+    sampletaken: string;
+    resultissued: string;
+    testtype: string;
   };
 }
 

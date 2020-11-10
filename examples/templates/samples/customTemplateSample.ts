@@ -8,6 +8,13 @@ export interface CustomTemplateCertificate extends v2.OpenAttestationDocument {
   };
   recipient?: {
     name: string;
+    result: string;
+    bookingreference: string;
+    testkitid: string;
+    psssportnumber: string;
+    sampletaken: string;
+    resultissued: string;
+    testtype: string;
   };
 }
 
