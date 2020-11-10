@@ -18,7 +18,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
   return (
     <div css={style} className={className} id="custom-template">
       <div className="A4">
-        <h1>{document?.foo?.title ?? "Collinson HealthCert"}</h1>
+        <h1>{document?.foo?.title ?? "Collinson Health Certificate"}</h1>
         <pre>{JSON.stringify(document, null, 2)}</pre>
       </div>
     </div>
