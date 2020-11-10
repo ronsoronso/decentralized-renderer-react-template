@@ -21,14 +21,14 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
       <h1>{document?.foo?.title ?? "Test Report"}</h1>
       <pre>{JSON.stringify(document, null, 2)}</pre>
       <div>awarded to</div>
-      <h1>Dear{document?.recipient?.name}</h1>
-      <h1>{document?.recipient?.result}</h1>
-      <h1>{document?.recipient?.bookingreference}</h1>
-      <h1>{document?.recipient?.testkitid}</h1>
-      <h1>{document?.recipient?.psssportnumber}</h1>
-      <h1>{document?.recipient?.sampletaken}</h1>
-      <h1>{document?.recipient?.resultissued}</h1>
-      <h1>{document?.recipient?.testtype}</h1>
+      <h1>"Dear "{document?.recipient?.name}</h1>
+      <h1>"Result: "{document?.recipient?.result}</h1>
+      <h1>"Booking Reference:"{document?.recipient?.bookingreference}</h1>
+      <h1>"Test Kit ID: "{document?.recipient?.testkitid}</h1>
+      <h1>"Passport Number: "{document?.recipient?.psssportnumber}</h1>
+      <h1>"Sample Taken: "{document?.recipient?.sampletaken}</h1>
+      <h1>"Result Issued: "{document?.recipient?.resultissued}</h1>
+      <h1>"Test Type: "{document?.recipient?.testtype}</h1>
     </div>
   );
 };
