@@ -6,6 +6,9 @@ export interface CustomTemplateCertificate extends Document {
   foo?: {
     title: string;
   };
+  recipient?: {
+    name: string;
+  };
 }
 
 export const customTemplateCertificate: CustomTemplateCertificate = {

@@ -6,6 +6,9 @@ export interface CustomTemplateCertificate extends v2.OpenAttestationDocument {
   foo?: {
     title: string;
   };
+  recipient?: {
+    name: string;
+  };
 }
 
 export const customTemplateCertificate: CustomTemplateCertificate = {
