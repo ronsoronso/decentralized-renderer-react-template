@@ -21,7 +21,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
       <h1>{document?.foo?.title ?? "Collinson HealthCert"}</h1>
       <pre>{JSON.stringify(document, null, 2)}</pre>
       <div>awarded to</div>
-      <h2>{document?.recipient?.name}</h2>
+      <h2>{document?.recipient.name}</h2>
     </div>
   );
 };
