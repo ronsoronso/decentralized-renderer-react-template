@@ -18,7 +18,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
   return (
     <div css={style} className={className} id="custom-template">
       <PrintWatermark />
-      <h1>{document?.foo?.title ?? "Test Report"}</h2>
+      <h1>{document?.foo?.title ?? "Test Report"}</h1>
       <h2>Dear {document?.recipient?.name}</h2>
       <h2>Result: {document?.recipient?.result}</h2>
       <h2>Booking Reference: {document?.recipient?.bookingreference}</h2>
