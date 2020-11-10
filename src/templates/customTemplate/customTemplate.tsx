@@ -18,7 +18,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
   return (
     <div css={style} className={className} id="custom-template">
       <PrintWatermark />
-      <h1>{document?.foo?.title ?? "Default title"}</h1>
+      <h1>{document?.foo?.title ?? "Collinson HealthCert"}</h1>
       <pre>{JSON.stringify(document, null, 2)}</pre>
     </div>
   );
