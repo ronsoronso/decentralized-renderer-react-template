@@ -39,7 +39,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 				<p>{document?.foo?.title ?? "Test Report"}</p>
 			</div>
 			<div className="salutation-container">
-				<p">Dear {document?.recipient?.name}, </p>
+				<p>Dear {document?.recipient?.name}, </p>
 			</div>
 			{resultContainer}
 			<div className="detail-table-container">
