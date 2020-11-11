@@ -17,6 +17,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 }) => {
   return (
   	<div css={style} className={document?.recipient?.result} id="custom-template">
+      <PrintWatermark >
 		<style>
 			.positive-result-container,
 			.negative-result-container {
