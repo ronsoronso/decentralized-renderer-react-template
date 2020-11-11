@@ -36,7 +36,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 				<p>Dear {document?.recipient?.name}, </p>
 			</div>
 			<div className="detail-table-container">
-				<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+				<table border="0" cellpadding="0" cellspacing="0">
 					<tr>
 						<td align="left">Booking Reference:</td>
 						<td align="right">{document?.recipient?.bookingreference}</td>
