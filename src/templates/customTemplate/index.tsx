@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const templates = [
   {
     id: "custom",
-    label: "Main",
+    label: "Report",
     template: CustomTemplate
   },
 ];
