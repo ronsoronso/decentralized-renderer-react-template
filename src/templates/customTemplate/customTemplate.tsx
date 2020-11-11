@@ -26,8 +26,8 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 		<PrintWatermark />
 		<div className="main-container">
 			<div className="header-container">
-				<img src="{collinsonlogo}" className="collinson-logo" />
-				<img src="{clientlogo}" className="client-logo" />
+				<img src={collinsonlogo} className="collinson-logo" />
+				<img src={clientlogo} className="client-logo" />
 			</div>
 			<div className="title-container">
 				<p>{document?.foo?.title ?? "Test Report"}</p>
