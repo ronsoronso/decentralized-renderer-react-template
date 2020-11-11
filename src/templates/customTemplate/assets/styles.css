@@ -80,6 +80,15 @@
 	margin-bottom: 0px;
 }
 
+.result-container .icon {
+	width: 29px;
+	height: auto;
+	position: relative;
+	top: 6px;
+	left: 20px;
+}
+
+
 .text-negative {
 	color: #75B929;
 }

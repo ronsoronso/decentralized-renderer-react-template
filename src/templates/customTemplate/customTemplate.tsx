@@ -35,6 +35,11 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 			<div className="salutation-container">
 				<p>Dear {document?.recipient?.name}, </p>
 			</div>
+			{document?.recipient?.result == "NEGATIVE" ? (
+				<div className="result-container"><p>Result: <span className="text-negative">{document?.recipient?.result}</span><img src={negativeicon} className="icon" /></p><p className="desc text-negative">You may proceed to check-in and complete the boarding process</p></div>
+			) : (
+				<div className="result-container"><p>Result: <span className="text-positive">{document?.recipient?.result}</span><img src={positiveicon} className="icon" /></p><p className="desc text-negative">You will be unable to complete the check in and boarding process, please refer to the testing centre guidance on quarantine rules and procedures</p></div>
+			)}
 			<div className="detail-table-container">
 				<table>
 					<tr>
