@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import React, { Component } from "react";
+import { Component } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 import { CustomTemplateCertificate } from "../sample";
@@ -16,13 +16,6 @@ const style = css`
     background-color: lightgray;
   }
 `;
-
-var resultContainer;
-if (document?.recipient?.result == "NEGATIVE") {
-	resultContainer = <div className="result-container"><p>Result: <span className="text-negative">{document?.recipient?.result}</span><img src="{negativeicon}" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;" /></p><p className="desc text-negative">You may proceed to check-in and complete the boarding process</p></div>;
-} else {
-	resultContainer = <div className="result-container"><p>Result: <span className="text-positive">{document?.recipient?.result}</span><img src="{positiveicon}" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;" /></p><p className="desc text-positive">You will be unable to complete the check in and boarding process, please refer to the testing centre guidance on quarantine rules and procedures</p></div>;
-}
 
 export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCertificate> & { className?: string }> = ({
   document,
@@ -42,7 +35,6 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 			<div className="salutation-container">
 				<p>Dear {document?.recipient?.name}, </p>
 			</div>
-			{resultContainer}
 			<div className="detail-table-container">
 				<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
 					<tr>
