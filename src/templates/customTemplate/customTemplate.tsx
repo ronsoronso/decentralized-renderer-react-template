@@ -1,4 +1,5 @@
-import React, { FunctionComponent }, { Component } from "react";
+import React, { FunctionComponent } from "react";
+import React, { Component } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 import { CustomTemplateCertificate } from "../sample";
