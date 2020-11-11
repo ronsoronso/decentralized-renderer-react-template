@@ -89,11 +89,11 @@
 }
 
 
-.text-negative {
+.result-container .desc.text-negative {
 	color: #75B929;
 }
 
-.text-positive {
+.result-container .desc.text-positive {
 	color: #CE0058;
 }
 
