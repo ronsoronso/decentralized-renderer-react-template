@@ -20,8 +20,8 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 		<PrintWatermark />
 		<div style="background-color: #FFF; width: 680px; min-height: 1095px; margin: 0 auto 0 auto;">
 			<div style="padding: 38px 46px 44px 38px; min-height: 44px;">
-				<img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/logo_collinson.png" style="width: 196px; height: auto; float: left;">
-				<img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/client_logo.png" style="width: 167px; height: auto; float: right;">
+				<img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/logo_collinson.png" style="width: 196px; height: auto; float: left;" />
+				<img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/client_logo.png" style="width: 167px; height: auto; float: right;" />
 			</div>
 			<div style="padding: 0px 46px 32px 38px; text-align: center;">
 				<p style="font-family: Arial; font-size: 48px; font-weight: bold; color: #003865; line-height: 58px; margin-top: 0px; margin-bottom: 0px;">{document?.foo?.title ?? "Test Report"}</p>
@@ -30,11 +30,11 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
 				<p style="font-family: Arial; font-size: 26px; font-weight: bold; color: #003865; line-height: 34px; letter-spacing: 0.37px; margin-top: 0px; margin-bottom: 0px;">Dear {document?.recipient?.name}, </p>
 			</div>
 			<div style="padding: 0px 46px 40px 38px; text-align: center;" class="result-container">
-				<p style="font-family: Arial; font-size: 28px; font-weight: bold; color: #003865; line-height: 41px; letter-spacing: 0.4px; margin-top: 0px; margin-bottom: 30px;">Result: <span style="color: #75B929;">{document?.recipient?.result}</span><img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/icon_negative.png" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;"></p>
+				<p style="font-family: Arial; font-size: 28px; font-weight: bold; color: #003865; line-height: 41px; letter-spacing: 0.4px; margin-top: 0px; margin-bottom: 30px;">Result: <span style="color: #75B929;">{document?.recipient?.result}</span><img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/icon_negative.png" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;" /></p>
 				<p style="font-family: Arial; font-size: 18px; font-weight: bold; color: #75B929; line-height: 21px; letter-spacing: 0.26px; margin-top: 0px; margin-bottom: 0px;">You may proceed to check-in and complete the boarding process</p>
 			</div>
 			<div style="padding: 0px 46px 40px 38px; text-align: center;" class="result-container">
-				<p style="font-family: Arial; font-size: 28px; font-weight: bold; color: #003865; line-height: 41px; letter-spacing: 0.4px; margin-top: 0px; margin-bottom: 30px;">Result: <span style="color: #D4236E;">{document?.recipient?.result}</span><img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/icon_positive.png" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;"></p>
+				<p style="font-family: Arial; font-size: 28px; font-weight: bold; color: #003865; line-height: 41px; letter-spacing: 0.4px; margin-top: 0px; margin-bottom: 30px;">Result: <span style="color: #D4236E;">{document?.recipient?.result}</span><img src="https://imageserver.hk/2020/collinsongroup/covid-test-cert-images/icon_positive.png" style="width: 29px; height: auto; position: relative; top: 6px; left: 20px;" /></p>
 				<p style="font-family: Arial; font-size: 18px; font-weight: bold; color: #D4236E; line-height: 21px; letter-spacing: 0.26px; margin-top: 0px; margin-bottom: 0px;">You may proceed to check-in and complete the boarding process</p>
 			</div>
 			<div style="background-color: #F2F8FB; padding: 40px 46px 18px 38px; text-align: center;">
